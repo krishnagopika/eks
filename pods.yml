@@ -1,10 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: allergy-service
+  name: allergy-service-pod
+  labels:
+    app: allergy-service
 spec:
   containers:
-  - name: my-container
+  - name: nodeapp
     image: jasdhirinrevature/allergy-svc:latest
     ports:
-        - containerPort: 8082
+    - containerPort: 8082
