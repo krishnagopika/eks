@@ -10,4 +10,3 @@ spec:
       image: jasdhirinrevature/allergy-svc:latest 
       ports:
         - containerPort: 8082
-     
